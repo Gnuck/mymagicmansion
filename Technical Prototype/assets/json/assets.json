@@ -1,0 +1,330 @@
+{
+	"textures": {
+		"tile-background": {
+			"file":     "textures/blank-tile.png"
+		},
+        "tile-floor": {
+            "file":     "textures/floor-beta.png"
+        },
+        "tile-floor-2": {
+            "file":     "textures/floor-beta-2.png"
+        },
+        "tile-raised-floor": {
+            "file":     "textures/tile-floor-05.png"
+        },
+        "Beige_Tile1": {
+            "file":     "textures/Beige_Tile1.png"
+        },
+        "Beige_Tile1-left": {
+            "file":     "textures/Beige_Tile1-left.png"
+        },
+        "Beige_Tile2_Fore2": {
+            "file":     "textures/Beige_Tile2_Fore2.png"
+        },
+        "Beige_Tile3_Fore1": {
+            "file":     "textures/Beige_Tile3_Fore1.png"
+        },
+        "Beige_Tile3_Fore2": {
+            "file":     "textures/Beige_Tile3_Fore2.png"
+        },
+        "Beige_Tile4_Fore1": {
+            "file":     "textures/Beige_Tile4_Fore1.png"
+        },
+        "Beige_Tile5_Fore1": {
+            "file":     "textures/Beige_Tile5_Fore1.png"
+        },
+        "Beige_Tile7_Fore1": {
+            "file":     "textures/Beige_Tile7_Fore1.png"
+        },
+        "Beige_Tile10_Fore1": {
+            "file":     "textures/Beige_Tile10_Fore1.png"
+        },
+        "shadow": {
+            "file":     "textures/shadow.png"
+        },
+        "Gray_Tile01": {
+            "file":     "textures/Gray_Tile01.png"
+        },
+        "Gray_Tile02": {
+            "file":     "textures/Gray_Tile02.png"
+        },
+        "Gray_Tile03": {
+            "file":     "textures/Gray_Tile03.png"
+        },
+        "Gray_Tile04": {
+            "file":     "textures/Gray_Tile04.png"
+        },
+        "Gray_Tile05": {
+            "file":     "textures/Gray_Tile05.png"
+        },
+        "Gray_Tile06": {
+            "file":     "textures/Gray_Tile06.png"
+        },
+        "Gray_Tile07": {
+            "file":     "textures/Gray_Tile07.png"
+        },
+        "Gray_Tile08": {
+            "file":     "textures/Gray_Tile08.png"
+        },
+        "Gray_Tile09": {
+            "file":     "textures/Gray_Tile09.png"
+        },
+        "Gray_Tile10": {
+            "file":     "textures/Gray_Tile10.png"
+        },
+        "Gray_Tile11": {
+            "file":     "textures/Gray_Tile11.png"
+        },
+        "L1_Book1": {
+            "file":     "textures/L1_Book1.png"
+        },
+        "L1_Closet1": {
+            "file":     "textures/L1_Closet1.png"
+        },
+        "L1_Closet2": {
+            "file":     "textures/L1_Closet2.png"
+        },
+        "L1_Closet3": {
+            "file":     "textures/L1_Closet3.png"
+        },
+        "L1_Deco1": {
+            "file":     "textures/L1_Deco1.png"
+        },
+        "L1_Deco2": {
+            "file":     "textures/L1_Deco2.png"
+        },
+        "L1_Flower1": {
+            "file":     "textures/L1_Flower1.png"
+        },
+        "L1_Flower2": {
+            "file":     "textures/L1_Flower2.png"
+        },
+        "L1_Flower3": {
+            "file":     "textures/L1_Flower3.png"
+        },
+        "L1_Flower4": {
+            "file":     "textures/L1_Flower4.png"
+        },
+        "L1_Flower5": {
+            "file":     "textures/L1_Flower5.png"
+        },
+        "L1_Flower6": {
+            "file":     "textures/L1_Flower6.png"
+        },
+        "L1_Flower7": {
+            "file":     "textures/L1_Flower7.png"
+        },
+        "L1_Handrail1": {
+            "file":     "textures/L1_Handrail1.png"
+        },
+        "L1_Handrail1-left": {
+            "file":     "textures/L1_Handrail1-left.png"
+        },
+        "L1_Handrail2": {
+            "file":     "textures/L1_Handrail2.png"
+        },
+        "L1_Handrail3": {
+            "file":     "textures/L1_Handrail3.png"
+        },
+        "L1_Light1": {
+            "file":     "textures/L1_Light1.png"
+        },
+        "L1_Mirror1": {
+            "file":     "textures/L1_Mirror1.png"
+        },
+        "L1_Table1": {
+            "file":     "textures/L1_Table1.png"
+        },
+        "L1_Window1": {
+            "file":     "textures/L1_Window1.png"
+        },
+        "L1_Window2": {
+            "file":     "textures/L1_Window2.png"
+        },
+        "L1_Window3": {
+            "file":     "textures/L1_Window3.png"
+        },
+        "tile-highlight": {
+            "file":     "textures/tile-highlight.png"
+        },
+        "tile-mask": {
+            "file":     "textures/tile-mask.png"
+        },
+        "tile-border": {
+            "file":     "textures/tile-border.png"
+        },
+        "lock-body": {
+            "file":     "textures/lock-body.png"
+        },
+        "lock-arch": {
+            "file":     "textures/lock-arch.png"
+        },
+        "key-green": {
+            "file":     "textures/key-green.png"
+        },
+        "key-yellow": {
+            "file":     "textures/key-yellow.png"
+        },
+        "key-pink": {
+            "file":     "textures/key-pink.png"
+        },
+        "key-red": {
+            "file":     "textures/key-pink.png"
+        },
+        "key-blue": {
+            "file":     "textures/key-blue.png"
+        },
+        "key-orange": {
+            "file":     "textures/key-orange.png"
+        },
+        "character": {
+            "file":     "textures/character.png"
+        },
+        "walking": {
+            "file":     "textures/walking.png"
+        },
+        "falling": {
+            "file":     "textures/falling.png"
+        },
+        "climbing": {
+            "file":     "textures/Climbing.png"
+        },
+        "pickup": {
+            "file":     "textures/picking up.png"
+        },
+        "exclamation": {
+            "file":     "textures/exclamation.png"
+        },
+        "door": {
+            "file":     "textures/goal-door.png"
+        },
+        "Door_End": {
+            "file":     "textures/Door_End.png"
+        },
+        "Door_Blue": {
+            "file":     "textures/Door_Blue.png"
+        },
+        "Door_Red": {
+            "file":     "textures/Door_Red.png"
+        },
+        "Door_Green": {
+            "file":     "textures/Door_Green.png"
+        },
+        "door-to-1":{
+            "file":     "textures/door-to-1.png"
+        },
+        "door-to-2": {
+            "file":     "textures/door-to-2.png"
+        },
+        "win-screen": {
+            "file":     "textures/victory.png"
+        },
+        "lose-screen": {
+            "file":     "textures/defeat.png"
+        },
+        "level-select-background-1": {
+            "file":     "textures/level-select-background-1.png"
+        },
+        "level-select-background-2": {
+            "file":     "textures/level-select-background-2.png"
+        },
+        "level-select-background-3": {
+            "file":     "textures/level-select-background-3.png"
+        },
+        "level-select-window": {
+            "file":     "textures/level-select-window.png"
+        },
+        "level complete": {
+            "file":     "textures/level complete.png"
+        },
+        "level-select-text": {
+            "file":     "textures/level-select-text.png"
+        },
+        "level-select-back": {
+            "file":     "textures/level-select-back.png"
+        },
+        "pause": {
+            "file":     "textures/pause.png"
+        },
+        "fast-forward": {
+            "file":     "textures/fast-forward.png"
+        },
+        "resume-button": {
+            "file":     "textures/resume-button.png"
+        },
+        "restart-button": {
+            "file":     "textures/restart-button.png"
+        },
+        "quit-button": {
+            "file":     "textures/quit-button.png"
+        },
+        "pause-panel": {
+            "file":     "textures/pause-panel.png"
+        },
+        "main-menu": {
+            "file":     "textures/main-menu.png"
+        },
+        "main-menu-text1": {
+            "file":     "textures/main-menu-text1.png"
+        },
+        "main-menu-text2": {
+            "file":     "textures/main-menu-text2.png"
+        },
+        "level-arrow-left": {
+            "file":     "textures/level-arrow-left.png"
+        },
+        "level-arrow-right": {
+            "file":     "textures/level-arrow-right.png"
+        },
+        "credits": {
+            "file":     "textures/credits.png"
+        },
+        "play-button": {
+            "file":     "textures/play-button.png"
+        },
+        "tutorial-fall": {
+            "file":     "textures/tutorial-fall.png"
+        },
+        "tutorial-tap": {
+            "file":     "textures/tutorial-tap.png"
+        },
+        "tutorial-speed-up": {
+            "file":     "textures/tutorial-speed-up.png"
+        },
+        "tutorial-swipe": {
+            "file":     "textures/tutorial-swipe.png"
+        },
+        "tutorial-dont-fall": {
+            "file":     "textures/tutorial-dont-fall.png"
+        }	},
+    "soundfx": {
+        "door_open": {
+            "file":     "sounds/door_open.mp3",
+            "volume":   0.8
+        },
+        "grab_collectable": {
+            "file":     "sounds/grab_collectable.mp3",
+            "volume":   0.6
+        },
+        "switch_tile": {
+            "file":     "sounds/switch_tile.mp3",
+            "volume":   0.8
+        }
+    },
+    "music": {
+        "bg-music1": {
+            "file":     "music/bg-music1.mp3",
+            "volume": 0.2
+        },
+        "bg-music2": {
+            "file":     "music/bg-music2.mp3",
+            "volume": 0.2
+        }
+    },
+    "fonts": {
+        "felt": {
+            "file":     "fonts/Gotham Book Regular.otf",
+            "size":     40
+        }
+    }
+}

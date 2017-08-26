@@ -1,0 +1,906 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5FDB738B-4496-47A2-8D3D-D299F7C76922}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="build-android\sdl2\main\dynapi\SDL_dynapi.c" />
+    <ClCompile Include="build-android\sdl2\main\SDL_android_main.c" />
+    <ClCompile Include="cugl\external\box2d\demo\glew\glew.c" />
+    <ClCompile Include="cugl\external\box2d\demo\glfw\context.c" />
+    <ClCompile Include="cugl\external\box2d\demo\glfw\egl_context.c" />
+    <ClCompile Include="cugl\external\box2d\demo\glfw\glx_context.c" />
+    <ClCompile Include="cugl\external\box2d\demo\glfw\init.c" />
+    <ClCompile Include="cugl\external\box2d\demo\glfw\input.c" />
+    <ClCompile Include="cugl\external\box2d\demo\glfw\linux_joystick.c" />
+    <ClCompile Include="cugl\external\box2d\demo\glfw\mach_time.c" />
+    <ClCompile Include="cugl\external\box2d\demo\glfw\mir_init.c" />
+    <ClCompile Include="cugl\external\box2d\demo\glfw\mir_monitor.c" />
+    <ClCompile Include="cugl\external\box2d\demo\glfw\mir_window.c" />
+    <ClCompile Include="cugl\external\box2d\demo\glfw\monitor.c" />
+    <ClCompile Include="cugl\external\box2d\demo\glfw\posix_time.c" />
+    <ClCompile Include="cugl\external\box2d\demo\glfw\posix_tls.c" />
+    <ClCompile Include="cugl\external\box2d\demo\glfw\wgl_context.c" />
+    <ClCompile Include="cugl\external\box2d\demo\glfw\win32_init.c" />
+    <ClCompile Include="cugl\external\box2d\demo\glfw\win32_monitor.c" />
+    <ClCompile Include="cugl\external\box2d\demo\glfw\win32_time.c" />
+    <ClCompile Include="cugl\external\box2d\demo\glfw\win32_tls.c" />
+    <ClCompile Include="cugl\external\box2d\demo\glfw\win32_window.c" />
+    <ClCompile Include="cugl\external\box2d\demo\glfw\window.c" />
+    <ClCompile Include="cugl\external\box2d\demo\glfw\winmm_joystick.c" />
+    <ClCompile Include="cugl\external\box2d\demo\glfw\wl_init.c" />
+    <ClCompile Include="cugl\external\box2d\demo\glfw\wl_monitor.c" />
+    <ClCompile Include="cugl\external\box2d\demo\glfw\wl_window.c" />
+    <ClCompile Include="cugl\external\box2d\demo\glfw\x11_init.c" />
+    <ClCompile Include="cugl\external\box2d\demo\glfw\x11_monitor.c" />
+    <ClCompile Include="cugl\external\box2d\demo\glfw\x11_window.c" />
+    <ClCompile Include="cugl\external\box2d\demo\glfw\xkb_unicode.c" />
+    <ClCompile Include="cugl\external\box2d\demo\helloworld\HelloWorld.cpp" />
+    <ClCompile Include="cugl\external\box2d\demo\imgui\imgui.cpp" />
+    <ClCompile Include="cugl\external\box2d\demo\imgui\imgui_demo.cpp" />
+    <ClCompile Include="cugl\external\box2d\demo\imgui\imgui_draw.cpp" />
+    <ClCompile Include="cugl\external\box2d\demo\imgui\imgui_impl_glfw_gl3.cpp" />
+    <ClCompile Include="cugl\external\box2d\demo\testbed\framework\DebugDraw.cpp" />
+    <ClCompile Include="cugl\external\box2d\demo\testbed\framework\Main.cpp" />
+    <ClCompile Include="cugl\external\box2d\demo\testbed\framework\Test.cpp" />
+    <ClCompile Include="cugl\external\box2d\demo\testbed\tests\TestEntries.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\collision\b2BroadPhase.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\collision\b2CollideCircle.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\collision\b2CollideEdge.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\collision\b2CollidePolygon.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\collision\b2Collision.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\collision\b2Distance.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\collision\b2DynamicTree.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\collision\b2TimeOfImpact.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\collision\shapes\b2ChainShape.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\collision\shapes\b2CircleShape.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\collision\shapes\b2EdgeShape.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\collision\shapes\b2PolygonShape.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\common\b2BlockAllocator.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\common\b2Draw.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\common\b2Math.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\common\b2Settings.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\common\b2StackAllocator.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\common\b2Timer.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\dynamics\b2Body.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\dynamics\b2ContactManager.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\dynamics\b2Fixture.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\dynamics\b2Island.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\dynamics\b2World.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\dynamics\b2WorldCallbacks.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\dynamics\contacts\b2ChainAndCircleContact.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\dynamics\contacts\b2ChainAndPolygonContact.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\dynamics\contacts\b2CircleContact.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\dynamics\contacts\b2Contact.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\dynamics\contacts\b2ContactSolver.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\dynamics\contacts\b2EdgeAndCircleContact.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\dynamics\contacts\b2EdgeAndPolygonContact.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\dynamics\contacts\b2PolygonAndCircleContact.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\dynamics\contacts\b2PolygonContact.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\dynamics\joints\b2DistanceJoint.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\dynamics\joints\b2FrictionJoint.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\dynamics\joints\b2GearJoint.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\dynamics\joints\b2Joint.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\dynamics\joints\b2MotorJoint.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\dynamics\joints\b2MouseJoint.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\dynamics\joints\b2PrismaticJoint.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\dynamics\joints\b2PulleyJoint.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\dynamics\joints\b2RevoluteJoint.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\dynamics\joints\b2RopeJoint.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\dynamics\joints\b2WeldJoint.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\dynamics\joints\b2WheelJoint.cpp" />
+    <ClCompile Include="cugl\external\box2d\src\box2d\rope\b2Rope.cpp" />
+    <ClCompile Include="cugl\external\cjson\cJSON.c" />
+    <ClCompile Include="cugl\src\2d\CUAnimationNode.cpp" />
+    <ClCompile Include="cugl\src\2d\CUButton.cpp" />
+    <ClCompile Include="cugl\src\2d\CUFont.cpp" />
+    <ClCompile Include="cugl\src\2d\CULabel.cpp" />
+    <ClCompile Include="cugl\src\2d\CUNode.cpp" />
+    <ClCompile Include="cugl\src\2d\CUPathNode.cpp" />
+    <ClCompile Include="cugl\src\2d\CUPolygonNode.cpp" />
+    <ClCompile Include="cugl\src\2d\CUProgressBar.cpp" />
+    <ClCompile Include="cugl\src\2d\CUScene.cpp" />
+    <ClCompile Include="cugl\src\2d\CUTexturedNode.cpp" />
+    <ClCompile Include="cugl\src\2d\CUWireNode.cpp" />
+    <ClCompile Include="cugl\src\2d\physics\CUBoxObstacle.cpp" />
+    <ClCompile Include="cugl\src\2d\physics\CUCapsuleObstacle.cpp" />
+    <ClCompile Include="cugl\src\2d\physics\CUComplexObstacle.cpp" />
+    <ClCompile Include="cugl\src\2d\physics\CUObstacle.cpp" />
+    <ClCompile Include="cugl\src\2d\physics\CUObstacleSelector.cpp" />
+    <ClCompile Include="cugl\src\2d\physics\CUObstacleWorld.cpp" />
+    <ClCompile Include="cugl\src\2d\physics\CUPolygonObstacle.cpp" />
+    <ClCompile Include="cugl\src\2d\physics\CUSimpleObstacle.cpp" />
+    <ClCompile Include="cugl\src\2d\physics\CUWheelObstacle.cpp" />
+    <ClCompile Include="cugl\src\assets\CUAssetManager.cpp" />
+    <ClCompile Include="cugl\src\assets\CUFontLoader.cpp" />
+    <ClCompile Include="cugl\src\assets\CUJsonLoader.cpp" />
+    <ClCompile Include="cugl\src\assets\CUJsonValue.cpp" />
+    <ClCompile Include="cugl\src\assets\CUMusicLoader.cpp" />
+    <ClCompile Include="cugl\src\assets\CUSoundLoader.cpp" />
+    <ClCompile Include="cugl\src\assets\CUTextureLoader.cpp" />
+    <ClCompile Include="cugl\src\audio\CUAudioEngine.cpp" />
+    <ClCompile Include="cugl\src\audio\CUMusic.cpp" />
+    <ClCompile Include="cugl\src\audio\CUMusicQueue.cpp" />
+    <ClCompile Include="cugl\src\audio\CUSound.cpp" />
+    <ClCompile Include="cugl\src\audio\CUSoundChannel.cpp" />
+    <ClCompile Include="cugl\src\audio\platform\CUAudioEngine-SDL.cpp" />
+    <ClCompile Include="cugl\src\base\CUApplication.cpp" />
+    <ClCompile Include="cugl\src\base\CUDisplay.cpp" />
+    <ClCompile Include="cugl\src\base\platform\CUDisplay-SDL.cpp" />
+    <ClCompile Include="cugl\src\input\CUAccelerometer.cpp" />
+    <ClCompile Include="cugl\src\input\CUInput.cpp" />
+    <ClCompile Include="cugl\src\input\CUKeyboard.cpp" />
+    <ClCompile Include="cugl\src\input\CUMouse.cpp" />
+    <ClCompile Include="cugl\src\input\CUTextInput.cpp" />
+    <ClCompile Include="cugl\src\input\CUTouchscreen.cpp" />
+    <ClCompile Include="cugl\src\input\gestures\CUGestureInput.cpp" />
+    <ClCompile Include="cugl\src\input\gestures\CUPanInput.cpp" />
+    <ClCompile Include="cugl\src\input\gestures\CUPinchInput.cpp" />
+    <ClCompile Include="cugl\src\input\gestures\CURotationInput.cpp" />
+    <ClCompile Include="cugl\src\io\CUBinaryReader.cpp" />
+    <ClCompile Include="cugl\src\io\CUBinaryWriter.cpp" />
+    <ClCompile Include="cugl\src\io\CUJsonReader.cpp" />
+    <ClCompile Include="cugl\src\io\CUJsonWriter.cpp" />
+    <ClCompile Include="cugl\src\io\CUPathname.cpp" />
+    <ClCompile Include="cugl\src\io\CUTextReader.cpp" />
+    <ClCompile Include="cugl\src\io\CUTextWriter.cpp" />
+    <ClCompile Include="cugl\src\math\CUAffine2.cpp" />
+    <ClCompile Include="cugl\src\math\CUColor4.cpp" />
+    <ClCompile Include="cugl\src\math\CUCubicSpline.cpp" />
+    <ClCompile Include="cugl\src\math\CUFrustum.cpp" />
+    <ClCompile Include="cugl\src\math\CUMat4.cpp" />
+    <ClCompile Include="cugl\src\math\CUMathBase.cpp" />
+    <ClCompile Include="cugl\src\math\CUPlane.cpp" />
+    <ClCompile Include="cugl\src\math\CUPoly2.cpp" />
+    <ClCompile Include="cugl\src\math\CUPolynomial.cpp" />
+    <ClCompile Include="cugl\src\math\CUQuaternion.cpp" />
+    <ClCompile Include="cugl\src\math\CURay.cpp" />
+    <ClCompile Include="cugl\src\math\CURect.cpp" />
+    <ClCompile Include="cugl\src\math\CUSize.cpp" />
+    <ClCompile Include="cugl\src\math\CUVec2.cpp" />
+    <ClCompile Include="cugl\src\math\CUVec3.cpp" />
+    <ClCompile Include="cugl\src\math\CUVec4.cpp" />
+    <ClCompile Include="cugl\src\math\polygon\CUCubicSplineApproximator.cpp" />
+    <ClCompile Include="cugl\src\math\polygon\CUPathExtruder.cpp" />
+    <ClCompile Include="cugl\src\math\polygon\CUPathOutliner.cpp" />
+    <ClCompile Include="cugl\src\math\polygon\CUSimpleTriangulator.cpp" />
+    <ClCompile Include="cugl\src\renderer\CUCamera.cpp" />
+    <ClCompile Include="cugl\src\renderer\CUOrthographicCamera.cpp" />
+    <ClCompile Include="cugl\src\renderer\CUPerspectiveCamera.cpp" />
+    <ClCompile Include="cugl\src\renderer\CUShader.cpp" />
+    <ClCompile Include="cugl\src\renderer\CUSpriteBatch.cpp" />
+    <ClCompile Include="cugl\src\renderer\CUSpriteShader.cpp" />
+    <ClCompile Include="cugl\src\renderer\CUTexture.cpp" />
+    <ClCompile Include="cugl\src\util\CUDebug.cpp" />
+    <ClCompile Include="cugl\src\util\CUStrings.cpp" />
+    <ClCompile Include="cugl\src\util\CUThreadPool.cpp" />
+    <ClCompile Include="source\AbstractController.cpp" />
+    <ClCompile Include="source\App.cpp" />
+    <ClCompile Include="source\Character.cpp" />
+    <ClCompile Include="source\GameController.cpp" />
+    <ClCompile Include="source\GameMode.cpp" />
+    <ClCompile Include="source\GameModel.cpp" />
+    <ClCompile Include="source\InputController.cpp" />
+    <ClCompile Include="source\LevelController.cpp" />
+    <ClCompile Include="source\LevelLoader.cpp" />
+    <ClCompile Include="source\LoadingMode.cpp" />
+    <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\RDGameMode.cpp" />
+    <ClCompile Include="source\RDInput.cpp" />
+    <ClCompile Include="source\RDRocketModel.cpp" />
+    <ClCompile Include="source\Tile.cpp" />
+    <ClCompile Include="source\UIController.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="build-android\sdl2\includes\sdl2\begin_code.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\close_code.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_assert.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_atomic.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_audio.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_bits.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_blendmode.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_clipboard.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_config.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_config_android.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_config_iphoneos.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_config_macosx.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_config_minimal.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_config_pandora.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_config_psp.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_config_windows.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_config_winrt.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_config_wiz.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_copying.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_cpuinfo.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_egl.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_endian.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_error.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_events.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_filesystem.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_gamecontroller.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_gesture.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_haptic.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_hints.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_joystick.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_keyboard.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_keycode.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_loadso.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_log.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_main.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_messagebox.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_mouse.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_mutex.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_name.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_opengl.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_opengles.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_opengles2.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_opengles2_gl2.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_opengles2_gl2ext.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_opengles2_gl2platform.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_opengles2_khrplatform.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_opengl_glext.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_pixels.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_platform.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_power.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_quit.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_rect.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_render.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_revision.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_rwops.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_scancode.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_shape.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_stdinc.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_surface.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_system.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_syswm.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_test.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_test_assert.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_test_common.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_test_compare.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_test_crc32.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_test_font.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_test_fuzzer.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_test_harness.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_test_images.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_test_log.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_test_md5.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_test_random.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_thread.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_timer.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_touch.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_types.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_version.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2\SDL_video.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_image\miniz.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_image\SDL2_image.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_image\SDL_image.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_mixer\SDL2_mixer.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_mixer\SDL_mixer.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_mixer\timidity\timidity.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\config\ftconfig.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\config\ftheader.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\config\ftmodule.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\config\ftoption.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\config\ftstdlib.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\freetype.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftadvanc.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftautoh.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftbbox.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftbdf.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftbitmap.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftbzip2.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftcache.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftcffdrv.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftchapters.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftcid.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\fterrdef.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\fterrors.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftgasp.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftglyph.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftgxval.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftgzip.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftimage.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftincrem.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftlcdfil.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftlist.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftlzw.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftmac.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftmm.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftmodapi.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftmoderr.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftotval.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftoutln.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftpfr.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftrender.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftsizes.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftsnames.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftstroke.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftsynth.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftsystem.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\fttrigon.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\fttypes.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftwinfnt.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ftxf86.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\t1tables.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ttnameid.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\tttables.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\tttags.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\freetype\ttunpat.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\ft2build.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\SDL2_ttf.h" />
+    <ClInclude Include="build-android\sdl2\includes\sdl2_ttf\SDL_ttf.h" />
+    <ClInclude Include="build-android\sdl2\main\dynapi\SDL_dynapi.h" />
+    <ClInclude Include="build-android\sdl2\main\dynapi\SDL_dynapi_overrides.h" />
+    <ClInclude Include="build-android\sdl2\main\dynapi\SDL_dynapi_procs.h" />
+    <ClInclude Include="build-android\sdl2\main\SDL_internal.h" />
+    <ClInclude Include="build-android\sdl2\SDL_config.h" />
+    <ClInclude Include="build-win10\include\gl\eglew.h" />
+    <ClInclude Include="build-win10\include\gl\glew.h" />
+    <ClInclude Include="build-win10\include\gl\glxew.h" />
+    <ClInclude Include="build-win10\include\gl\wglew.h" />
+    <ClInclude Include="build-win10\rocketdemo\resource.h" />
+    <ClInclude Include="cugl\build-win10\include\gl\eglew.h" />
+    <ClInclude Include="cugl\build-win10\include\gl\glew.h" />
+    <ClInclude Include="cugl\build-win10\include\gl\glxew.h" />
+    <ClInclude Include="cugl\build-win10\include\gl\wglew.h" />
+    <ClInclude Include="cugl\external\box2d\demo\glew\glew.h" />
+    <ClInclude Include="cugl\external\box2d\demo\glew\glxew.h" />
+    <ClInclude Include="cugl\external\box2d\demo\glew\wglew.h" />
+    <ClInclude Include="cugl\external\box2d\demo\glfw\cocoa_platform.h" />
+    <ClInclude Include="cugl\external\box2d\demo\glfw\eglext.h" />
+    <ClInclude Include="cugl\external\box2d\demo\glfw\egl_context.h" />
+    <ClInclude Include="cugl\external\box2d\demo\glfw\glext.h" />
+    <ClInclude Include="cugl\external\box2d\demo\glfw\glfw3.h" />
+    <ClInclude Include="cugl\external\box2d\demo\glfw\glfw3native.h" />
+    <ClInclude Include="cugl\external\box2d\demo\glfw\glfw_config.h" />
+    <ClInclude Include="cugl\external\box2d\demo\glfw\glxext.h" />
+    <ClInclude Include="cugl\external\box2d\demo\glfw\glx_context.h" />
+    <ClInclude Include="cugl\external\box2d\demo\glfw\internal.h" />
+    <ClInclude Include="cugl\external\box2d\demo\glfw\iokit_joystick.h" />
+    <ClInclude Include="cugl\external\box2d\demo\glfw\linux_joystick.h" />
+    <ClInclude Include="cugl\external\box2d\demo\glfw\mir_platform.h" />
+    <ClInclude Include="cugl\external\box2d\demo\glfw\nsgl_context.h" />
+    <ClInclude Include="cugl\external\box2d\demo\glfw\posix_time.h" />
+    <ClInclude Include="cugl\external\box2d\demo\glfw\posix_tls.h" />
+    <ClInclude Include="cugl\external\box2d\demo\glfw\wglext.h" />
+    <ClInclude Include="cugl\external\box2d\demo\glfw\wgl_context.h" />
+    <ClInclude Include="cugl\external\box2d\demo\glfw\win32_platform.h" />
+    <ClInclude Include="cugl\external\box2d\demo\glfw\win32_tls.h" />
+    <ClInclude Include="cugl\external\box2d\demo\glfw\winmm_joystick.h" />
+    <ClInclude Include="cugl\external\box2d\demo\glfw\wl_platform.h" />
+    <ClInclude Include="cugl\external\box2d\demo\glfw\x11_platform.h" />
+    <ClInclude Include="cugl\external\box2d\demo\glfw\xkb_unicode.h" />
+    <ClInclude Include="cugl\external\box2d\demo\imgui\imconfig.h" />
+    <ClInclude Include="cugl\external\box2d\demo\imgui\imgui.h" />
+    <ClInclude Include="cugl\external\box2d\demo\imgui\imgui_impl_glfw_gl3.h" />
+    <ClInclude Include="cugl\external\box2d\demo\imgui\imgui_internal.h" />
+    <ClInclude Include="cugl\external\box2d\demo\imgui\stb_rect_pack.h" />
+    <ClInclude Include="cugl\external\box2d\demo\imgui\stb_textedit.h" />
+    <ClInclude Include="cugl\external\box2d\demo\imgui\stb_truetype.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\framework\DebugDraw.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\framework\Test.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\AddPair.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\ApplyForce.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\BasicSliderCrank.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\BodyTypes.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\Breakable.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\Bridge.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\BulletTest.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\Cantilever.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\Car.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\Chain.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\CharacterCollision.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\CollisionFiltering.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\CollisionProcessing.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\CompoundShapes.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\Confined.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\ContinuousTest.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\ConvexHull.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\ConveyorBelt.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\DistanceTest.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\Dominos.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\DumpShell.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\DynamicTreeTest.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\EdgeShapes.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\EdgeTest.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\Gears.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\HeavyOnLight.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\HeavyOnLightTwo.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\Mobile.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\MobileBalanced.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\MotorJoint.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\OneSidedPlatform.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\Pinball.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\PolyCollision.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\PolyShapes.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\Prismatic.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\Pulleys.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\Pyramid.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\RayCast.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\Revolute.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\Rope.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\RopeJoint.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\SensorTest.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\ShapeEditing.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\SliderCrank.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\SphereStack.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\TheoJansen.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\Tiles.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\TimeOfImpact.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\Tumbler.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\VaryingFriction.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\VaryingRestitution.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\VerticalStack.h" />
+    <ClInclude Include="cugl\external\box2d\demo\testbed\tests\Web.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\Box2D.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\collision\b2BroadPhase.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\collision\b2Collision.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\collision\b2Distance.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\collision\b2DynamicTree.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\collision\b2TimeOfImpact.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\collision\shapes\b2ChainShape.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\collision\shapes\b2CircleShape.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\collision\shapes\b2EdgeShape.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\collision\shapes\b2PolygonShape.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\collision\shapes\b2Shape.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\common\b2BlockAllocator.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\common\b2Draw.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\common\b2GrowableStack.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\common\b2Math.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\common\b2Settings.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\common\b2StackAllocator.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\common\b2Timer.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\dynamics\b2Body.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\dynamics\b2ContactManager.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\dynamics\b2Fixture.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\dynamics\b2Island.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\dynamics\b2TimeStep.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\dynamics\b2World.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\dynamics\b2WorldCallbacks.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\dynamics\contacts\b2ChainAndCircleContact.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\dynamics\contacts\b2ChainAndPolygonContact.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\dynamics\contacts\b2CircleContact.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\dynamics\contacts\b2Contact.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\dynamics\contacts\b2ContactSolver.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\dynamics\contacts\b2EdgeAndCircleContact.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\dynamics\contacts\b2EdgeAndPolygonContact.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\dynamics\contacts\b2PolygonAndCircleContact.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\dynamics\contacts\b2PolygonContact.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\dynamics\joints\b2DistanceJoint.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\dynamics\joints\b2FrictionJoint.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\dynamics\joints\b2GearJoint.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\dynamics\joints\b2Joint.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\dynamics\joints\b2MotorJoint.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\dynamics\joints\b2MouseJoint.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\dynamics\joints\b2PrismaticJoint.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\dynamics\joints\b2PulleyJoint.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\dynamics\joints\b2RevoluteJoint.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\dynamics\joints\b2RopeJoint.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\dynamics\joints\b2WeldJoint.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\dynamics\joints\b2WheelJoint.h" />
+    <ClInclude Include="cugl\external\box2d\src\box2d\rope\b2Rope.h" />
+    <ClInclude Include="cugl\external\cjson\cJSON.h" />
+    <ClInclude Include="cugl\include\box2d\Box2D.h" />
+    <ClInclude Include="cugl\include\box2d\collision\b2BroadPhase.h" />
+    <ClInclude Include="cugl\include\box2d\collision\b2Collision.h" />
+    <ClInclude Include="cugl\include\box2d\collision\b2Distance.h" />
+    <ClInclude Include="cugl\include\box2d\collision\b2DynamicTree.h" />
+    <ClInclude Include="cugl\include\box2d\collision\b2TimeOfImpact.h" />
+    <ClInclude Include="cugl\include\box2d\collision\shapes\b2ChainShape.h" />
+    <ClInclude Include="cugl\include\box2d\collision\shapes\b2CircleShape.h" />
+    <ClInclude Include="cugl\include\box2d\collision\shapes\b2EdgeShape.h" />
+    <ClInclude Include="cugl\include\box2d\collision\shapes\b2PolygonShape.h" />
+    <ClInclude Include="cugl\include\box2d\collision\shapes\b2Shape.h" />
+    <ClInclude Include="cugl\include\box2d\common\b2BlockAllocator.h" />
+    <ClInclude Include="cugl\include\box2d\common\b2Draw.h" />
+    <ClInclude Include="cugl\include\box2d\common\b2GrowableStack.h" />
+    <ClInclude Include="cugl\include\box2d\common\b2Math.h" />
+    <ClInclude Include="cugl\include\box2d\common\b2Settings.h" />
+    <ClInclude Include="cugl\include\box2d\common\b2StackAllocator.h" />
+    <ClInclude Include="cugl\include\box2d\common\b2Timer.h" />
+    <ClInclude Include="cugl\include\box2d\dynamics\b2Body.h" />
+    <ClInclude Include="cugl\include\box2d\dynamics\b2ContactManager.h" />
+    <ClInclude Include="cugl\include\box2d\dynamics\b2Fixture.h" />
+    <ClInclude Include="cugl\include\box2d\dynamics\b2Island.h" />
+    <ClInclude Include="cugl\include\box2d\dynamics\b2TimeStep.h" />
+    <ClInclude Include="cugl\include\box2d\dynamics\b2World.h" />
+    <ClInclude Include="cugl\include\box2d\dynamics\b2WorldCallbacks.h" />
+    <ClInclude Include="cugl\include\box2d\dynamics\contacts\b2ChainAndCircleContact.h" />
+    <ClInclude Include="cugl\include\box2d\dynamics\contacts\b2ChainAndPolygonContact.h" />
+    <ClInclude Include="cugl\include\box2d\dynamics\contacts\b2CircleContact.h" />
+    <ClInclude Include="cugl\include\box2d\dynamics\contacts\b2Contact.h" />
+    <ClInclude Include="cugl\include\box2d\dynamics\contacts\b2ContactSolver.h" />
+    <ClInclude Include="cugl\include\box2d\dynamics\contacts\b2EdgeAndCircleContact.h" />
+    <ClInclude Include="cugl\include\box2d\dynamics\contacts\b2EdgeAndPolygonContact.h" />
+    <ClInclude Include="cugl\include\box2d\dynamics\contacts\b2PolygonAndCircleContact.h" />
+    <ClInclude Include="cugl\include\box2d\dynamics\contacts\b2PolygonContact.h" />
+    <ClInclude Include="cugl\include\box2d\dynamics\joints\b2DistanceJoint.h" />
+    <ClInclude Include="cugl\include\box2d\dynamics\joints\b2FrictionJoint.h" />
+    <ClInclude Include="cugl\include\box2d\dynamics\joints\b2GearJoint.h" />
+    <ClInclude Include="cugl\include\box2d\dynamics\joints\b2Joint.h" />
+    <ClInclude Include="cugl\include\box2d\dynamics\joints\b2MotorJoint.h" />
+    <ClInclude Include="cugl\include\box2d\dynamics\joints\b2MouseJoint.h" />
+    <ClInclude Include="cugl\include\box2d\dynamics\joints\b2PrismaticJoint.h" />
+    <ClInclude Include="cugl\include\box2d\dynamics\joints\b2PulleyJoint.h" />
+    <ClInclude Include="cugl\include\box2d\dynamics\joints\b2RevoluteJoint.h" />
+    <ClInclude Include="cugl\include\box2d\dynamics\joints\b2RopeJoint.h" />
+    <ClInclude Include="cugl\include\box2d\dynamics\joints\b2WeldJoint.h" />
+    <ClInclude Include="cugl\include\box2d\dynamics\joints\b2WheelJoint.h" />
+    <ClInclude Include="cugl\include\box2d\rope\b2Rope.h" />
+    <ClInclude Include="cugl\include\cjson\cJSON.h" />
+    <ClInclude Include="cugl\include\cugl\2d\CUAnimationNode.h" />
+    <ClInclude Include="cugl\include\cugl\2d\CUButton.h" />
+    <ClInclude Include="cugl\include\cugl\2d\CUFont.h" />
+    <ClInclude Include="cugl\include\cugl\2d\CULabel.h" />
+    <ClInclude Include="cugl\include\cugl\2d\CUNode.h" />
+    <ClInclude Include="cugl\include\cugl\2d\CUPathNode.h" />
+    <ClInclude Include="cugl\include\cugl\2d\CUPolygonNode.h" />
+    <ClInclude Include="cugl\include\cugl\2d\CUProgressBar.h" />
+    <ClInclude Include="cugl\include\cugl\2d\CUScene.h" />
+    <ClInclude Include="cugl\include\cugl\2d\CUTexturedNode.h" />
+    <ClInclude Include="cugl\include\cugl\2d\CUWireNode.h" />
+    <ClInclude Include="cugl\include\cugl\2d\cu_2d.h" />
+    <ClInclude Include="cugl\include\cugl\2d\physics\CUBoxObstacle.h" />
+    <ClInclude Include="cugl\include\cugl\2d\physics\CUCapsuleObstacle.h" />
+    <ClInclude Include="cugl\include\cugl\2d\physics\CUComplexObstacle.h" />
+    <ClInclude Include="cugl\include\cugl\2d\physics\CUObstacle.h" />
+    <ClInclude Include="cugl\include\cugl\2d\physics\CUObstacleSelector.h" />
+    <ClInclude Include="cugl\include\cugl\2d\physics\CUObstacleWorld.h" />
+    <ClInclude Include="cugl\include\cugl\2d\physics\CUPolygonObstacle.h" />
+    <ClInclude Include="cugl\include\cugl\2d\physics\CUSimpleObstacle.h" />
+    <ClInclude Include="cugl\include\cugl\2d\physics\CUWheelObstacle.h" />
+    <ClInclude Include="cugl\include\cugl\2d\physics\cu_physics.h" />
+    <ClInclude Include="cugl\include\cugl\assets\CUAsset.h" />
+    <ClInclude Include="cugl\include\cugl\assets\CUAssetManager.h" />
+    <ClInclude Include="cugl\include\cugl\assets\CUFontLoader.h" />
+    <ClInclude Include="cugl\include\cugl\assets\CUGenericLoader.h" />
+    <ClInclude Include="cugl\include\cugl\assets\CUJsonLoader.h" />
+    <ClInclude Include="cugl\include\cugl\assets\CUJsonValue.h" />
+    <ClInclude Include="cugl\include\cugl\assets\CULoader.h" />
+    <ClInclude Include="cugl\include\cugl\assets\CUMusicLoader.h" />
+    <ClInclude Include="cugl\include\cugl\assets\CUSoundLoader.h" />
+    <ClInclude Include="cugl\include\cugl\assets\CUTextureLoader.h" />
+    <ClInclude Include="cugl\include\cugl\assets\cu_assets.h" />
+    <ClInclude Include="cugl\include\cugl\audio\CUAudioEngine.h" />
+    <ClInclude Include="cugl\include\cugl\audio\CUMusic.h" />
+    <ClInclude Include="cugl\include\cugl\audio\CUSound.h" />
+    <ClInclude Include="cugl\include\cugl\audio\cu_audio.h" />
+    <ClInclude Include="cugl\include\cugl\base\CUApplication.h" />
+    <ClInclude Include="cugl\include\cugl\base\CUBase.h" />
+    <ClInclude Include="cugl\include\cugl\base\CUDisplay.h" />
+    <ClInclude Include="cugl\include\cugl\base\CUEndian.h" />
+    <ClInclude Include="cugl\include\cugl\base\cu_platform.h" />
+    <ClInclude Include="cugl\include\cugl\base\platform\CUDisplay-impl.h" />
+    <ClInclude Include="cugl\include\cugl\cugl.h" />
+    <ClInclude Include="cugl\include\cugl\input\CUAccelerometer.h" />
+    <ClInclude Include="cugl\include\cugl\input\CUInput.h" />
+    <ClInclude Include="cugl\include\cugl\input\CUKeyboard.h" />
+    <ClInclude Include="cugl\include\cugl\input\CUMouse.h" />
+    <ClInclude Include="cugl\include\cugl\input\CUTextInput.h" />
+    <ClInclude Include="cugl\include\cugl\input\CUTouchscreen.h" />
+    <ClInclude Include="cugl\include\cugl\input\cu_input.h" />
+    <ClInclude Include="cugl\include\cugl\input\gestures\CUGestureInput.h" />
+    <ClInclude Include="cugl\include\cugl\input\gestures\CUPanInput.h" />
+    <ClInclude Include="cugl\include\cugl\input\gestures\CUPinchInput.h" />
+    <ClInclude Include="cugl\include\cugl\input\gestures\CURotationInput.h" />
+    <ClInclude Include="cugl\include\cugl\input\gestures\cu_gesture.h" />
+    <ClInclude Include="cugl\include\cugl\io\CUBinaryReader.h" />
+    <ClInclude Include="cugl\include\cugl\io\CUBinaryWriter.h" />
+    <ClInclude Include="cugl\include\cugl\io\CUJsonReader.h" />
+    <ClInclude Include="cugl\include\cugl\io\CUJsonWriter.h" />
+    <ClInclude Include="cugl\include\cugl\io\CUPathname.h" />
+    <ClInclude Include="cugl\include\cugl\io\CUTextReader.h" />
+    <ClInclude Include="cugl\include\cugl\io\CUTextWriter.h" />
+    <ClInclude Include="cugl\include\cugl\io\cu_io.h" />
+    <ClInclude Include="cugl\include\cugl\math\CUAffine2.h" />
+    <ClInclude Include="cugl\include\cugl\math\CUColor4.h" />
+    <ClInclude Include="cugl\include\cugl\math\CUCubicSpline.h" />
+    <ClInclude Include="cugl\include\cugl\math\CUFrustum.h" />
+    <ClInclude Include="cugl\include\cugl\math\CUMat4.h" />
+    <ClInclude Include="cugl\include\cugl\math\CUMathBase.h" />
+    <ClInclude Include="cugl\include\cugl\math\CUPlane.h" />
+    <ClInclude Include="cugl\include\cugl\math\CUPoly2.h" />
+    <ClInclude Include="cugl\include\cugl\math\CUPolynomial.h" />
+    <ClInclude Include="cugl\include\cugl\math\CUQuaternion.h" />
+    <ClInclude Include="cugl\include\cugl\math\CURay.h" />
+    <ClInclude Include="cugl\include\cugl\math\CURect.h" />
+    <ClInclude Include="cugl\include\cugl\math\CUSize.h" />
+    <ClInclude Include="cugl\include\cugl\math\CUVec2.h" />
+    <ClInclude Include="cugl\include\cugl\math\CUVec3.h" />
+    <ClInclude Include="cugl\include\cugl\math\CUVec4.h" />
+    <ClInclude Include="cugl\include\cugl\math\cu_math.h" />
+    <ClInclude Include="cugl\include\cugl\math\polygon\CUCubicSplineApproximator.h" />
+    <ClInclude Include="cugl\include\cugl\math\polygon\CUPathExtruder.h" />
+    <ClInclude Include="cugl\include\cugl\math\polygon\CUPathOutliner.h" />
+    <ClInclude Include="cugl\include\cugl\math\polygon\CUSimpleTriangulator.h" />
+    <ClInclude Include="cugl\include\cugl\math\polygon\cu_polygon.h" />
+    <ClInclude Include="cugl\include\cugl\renderer\CUCamera.h" />
+    <ClInclude Include="cugl\include\cugl\renderer\CUOrthographicCamera.h" />
+    <ClInclude Include="cugl\include\cugl\renderer\CUPerspectiveCamera.h" />
+    <ClInclude Include="cugl\include\cugl\renderer\CUShader.h" />
+    <ClInclude Include="cugl\include\cugl\renderer\CUSpriteBatch.h" />
+    <ClInclude Include="cugl\include\cugl\renderer\CUSpriteShader.h" />
+    <ClInclude Include="cugl\include\cugl\renderer\CUTexture.h" />
+    <ClInclude Include="cugl\include\cugl\renderer\CUVertex.h" />
+    <ClInclude Include="cugl\include\cugl\renderer\cu_renderer.h" />
+    <ClInclude Include="cugl\include\cugl\util\CUDebug.h" />
+    <ClInclude Include="cugl\include\cugl\util\CUFreeList.h" />
+    <ClInclude Include="cugl\include\cugl\util\CUGreedyFreeList.h" />
+    <ClInclude Include="cugl\include\cugl\util\CUStrings.h" />
+    <ClInclude Include="cugl\include\cugl\util\CUThreadPool.h" />
+    <ClInclude Include="cugl\include\cugl\util\CUTimestamp.h" />
+    <ClInclude Include="cugl\include\cugl\util\cu_util.h" />
+    <ClInclude Include="cugl\include\freetype\config\ftconfig.h" />
+    <ClInclude Include="cugl\include\freetype\config\ftheader.h" />
+    <ClInclude Include="cugl\include\freetype\config\ftmodule.h" />
+    <ClInclude Include="cugl\include\freetype\config\ftoption.h" />
+    <ClInclude Include="cugl\include\freetype\config\ftstdlib.h" />
+    <ClInclude Include="cugl\include\freetype\freetype.h" />
+    <ClInclude Include="cugl\include\freetype\ftadvanc.h" />
+    <ClInclude Include="cugl\include\freetype\ftautoh.h" />
+    <ClInclude Include="cugl\include\freetype\ftbbox.h" />
+    <ClInclude Include="cugl\include\freetype\ftbdf.h" />
+    <ClInclude Include="cugl\include\freetype\ftbitmap.h" />
+    <ClInclude Include="cugl\include\freetype\ftbzip2.h" />
+    <ClInclude Include="cugl\include\freetype\ftcache.h" />
+    <ClInclude Include="cugl\include\freetype\ftcffdrv.h" />
+    <ClInclude Include="cugl\include\freetype\ftchapters.h" />
+    <ClInclude Include="cugl\include\freetype\ftcid.h" />
+    <ClInclude Include="cugl\include\freetype\fterrdef.h" />
+    <ClInclude Include="cugl\include\freetype\fterrors.h" />
+    <ClInclude Include="cugl\include\freetype\ftgasp.h" />
+    <ClInclude Include="cugl\include\freetype\ftglyph.h" />
+    <ClInclude Include="cugl\include\freetype\ftgxval.h" />
+    <ClInclude Include="cugl\include\freetype\ftgzip.h" />
+    <ClInclude Include="cugl\include\freetype\ftimage.h" />
+    <ClInclude Include="cugl\include\freetype\ftincrem.h" />
+    <ClInclude Include="cugl\include\freetype\ftlcdfil.h" />
+    <ClInclude Include="cugl\include\freetype\ftlist.h" />
+    <ClInclude Include="cugl\include\freetype\ftlzw.h" />
+    <ClInclude Include="cugl\include\freetype\ftmac.h" />
+    <ClInclude Include="cugl\include\freetype\ftmm.h" />
+    <ClInclude Include="cugl\include\freetype\ftmodapi.h" />
+    <ClInclude Include="cugl\include\freetype\ftmoderr.h" />
+    <ClInclude Include="cugl\include\freetype\ftotval.h" />
+    <ClInclude Include="cugl\include\freetype\ftoutln.h" />
+    <ClInclude Include="cugl\include\freetype\ftpfr.h" />
+    <ClInclude Include="cugl\include\freetype\ftrender.h" />
+    <ClInclude Include="cugl\include\freetype\ftsizes.h" />
+    <ClInclude Include="cugl\include\freetype\ftsnames.h" />
+    <ClInclude Include="cugl\include\freetype\ftstroke.h" />
+    <ClInclude Include="cugl\include\freetype\ftsynth.h" />
+    <ClInclude Include="cugl\include\freetype\ftsystem.h" />
+    <ClInclude Include="cugl\include\freetype\fttrigon.h" />
+    <ClInclude Include="cugl\include\freetype\fttypes.h" />
+    <ClInclude Include="cugl\include\freetype\ftwinfnt.h" />
+    <ClInclude Include="cugl\include\freetype\ftxf86.h" />
+    <ClInclude Include="cugl\include\freetype\t1tables.h" />
+    <ClInclude Include="cugl\include\freetype\ttnameid.h" />
+    <ClInclude Include="cugl\include\freetype\tttables.h" />
+    <ClInclude Include="cugl\include\freetype\tttags.h" />
+    <ClInclude Include="cugl\include\freetype\ttunpat.h" />
+    <ClInclude Include="cugl\include\ft2build.h" />
+    <ClInclude Include="cugl\include\ogg\config_types.h" />
+    <ClInclude Include="cugl\include\ogg\ogg.h" />
+    <ClInclude Include="cugl\include\ogg\os_types.h" />
+    <ClInclude Include="cugl\include\sdl\begin_code.h" />
+    <ClInclude Include="cugl\include\sdl\close_code.h" />
+    <ClInclude Include="cugl\include\sdl\miniz.h" />
+    <ClInclude Include="cugl\include\sdl\SDL.h" />
+    <ClInclude Include="cugl\include\sdl\SDL2_mixer.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_assert.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_atomic.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_audio.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_bits.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_blendmode.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_clipboard.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_config.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_config_android.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_config_iphoneos.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_config_macosx.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_config_minimal.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_config_pandora.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_config_psp.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_config_windows.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_config_winrt.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_config_wiz.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_copying.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_cpuinfo.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_egl.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_endian.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_error.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_events.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_filesystem.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_gamecontroller.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_gesture.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_haptic.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_hints.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_image.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_joystick.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_keyboard.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_keycode.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_loadso.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_log.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_main.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_messagebox.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_mixer.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_mouse.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_mutex.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_name.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_opengl.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_opengles.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_opengles2.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_opengles2_gl2.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_opengles2_gl2ext.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_opengles2_gl2platform.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_opengles2_khrplatform.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_opengl_glext.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_pixels.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_platform.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_power.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_quit.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_rect.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_render.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_revision.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_rwops.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_scancode.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_shape.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_stdinc.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_surface.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_system.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_syswm.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_test.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_test_assert.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_test_common.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_test_compare.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_test_crc32.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_test_font.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_test_fuzzer.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_test_harness.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_test_images.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_test_log.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_test_md5.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_test_random.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_thread.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_timer.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_touch.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_ttf.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_types.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_version.h" />
+    <ClInclude Include="cugl\include\sdl\SDL_video.h" />
+    <ClInclude Include="cugl\include\sdl\timidity\timidity.h" />
+    <ClInclude Include="cugl\include\utf8\utf8.h" />
+    <ClInclude Include="cugl\include\utf8\utf8checked.h" />
+    <ClInclude Include="cugl\include\utf8\utf8core.h" />
+    <ClInclude Include="cugl\include\utf8\utf8unchecked.h" />
+    <ClInclude Include="cugl\include\vorbis\codec.h" />
+    <ClInclude Include="cugl\include\vorbis\vorbisenc.h" />
+    <ClInclude Include="cugl\include\vorbis\vorbisfile.h" />
+    <ClInclude Include="cugl\src\audio\CUMusicQueue.h" />
+    <ClInclude Include="cugl\src\audio\CUSoundChannel.h" />
+    <ClInclude Include="cugl\src\audio\platform\AVOggAudioFile.h" />
+    <ClInclude Include="cugl\src\audio\platform\CUAudioEngine-impl.h" />
+    <ClInclude Include="cugl\src\base\platform\CUDisplay-impl.h" />
+    <ClInclude Include="source\AbstractController.hpp" />
+    <ClInclude Include="source\App.h" />
+    <ClInclude Include="source\Character.hpp" />
+    <ClInclude Include="source\GameController.hpp" />
+    <ClInclude Include="source\GameMode.hpp" />
+    <ClInclude Include="source\GameModel.hpp" />
+    <ClInclude Include="source\InputController.hpp" />
+    <ClInclude Include="source\LevelController.hpp" />
+    <ClInclude Include="source\LevelLoader.hpp" />
+    <ClInclude Include="source\LoadingMode.h" />
+    <ClInclude Include="source\RDGameMode.h" />
+    <ClInclude Include="source\RDInput.h" />
+    <ClInclude Include="source\RDRocketModel.h" />
+    <ClInclude Include="source\Tile.hpp" />
+    <ClInclude Include="source\UIController.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cugl\src\math\Mat4-Apple.inl" />
+    <None Include="cugl\src\math\Mat4-Default.inl" />
+    <None Include="cugl\src\math\Mat4-Neon64.inl" />
+    <None Include="cugl\src\math\Mat4-SSE.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="build-win10\rocketdemo\RocketDemo.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
